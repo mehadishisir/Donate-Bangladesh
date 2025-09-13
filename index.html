@@ -63,7 +63,7 @@
     </header>
     <!-- Main content here -->
     <main class="container mx-auto pt-10 top-32 left-0 w-full px-6 py-8">
-      <div>
+      <div id="donation-section">
         <!-- card 1 -->
         <div
           class="flex flex-row items-center gap-6 border border-gray-300 rounded-lg p-6 m-6"
@@ -74,7 +74,7 @@
               class="flex items-center gap-2 bg-gray-300 rounded-lg px-4 py-1 w-fit mb-4"
             >
               <img src="assets/coin.png" alt="Coin" class="h-6" />
-              <h4>0</h4>
+              <h4 id="donation-noakhali">0</h4>
               <p>BDT</p>
             </div>
             <h1 class="text-lg font-bold mb-2">
@@ -90,11 +90,13 @@
             </p>
             <input
               type="text"
+              id="donation-ammount"
               class="input border border-gray-300 rounded-md p-2 w-full mt-4"
               placeholder="Write Donation Ammount"
             />
 
             <button
+              id="donate-now"
               class="btn bg-[#B4F461] text-gray-900 font-semibold normal-case mt-4 w-full"
             >
               Donate Now
@@ -111,7 +113,7 @@
               class="flex items-center gap-2 bg-gray-300 rounded-lg px-4 py-1 w-fit mb-4"
             >
               <img src="assets/coin.png" alt="Coin" class="h-6" />
-              <h4>600</h4>
+              <h4 id="donate-feni">600</h4>
               <p>BDT</p>
             </div>
             <h1 class="text-lg font-bold mb-2">
@@ -129,11 +131,13 @@
             </p>
             <input
               type="text"
+              id="donate-ammmmount"
               class="input border border-gray-300 rounded-md p-2 w-full mt-4"
               placeholder="Write Donation Ammount"
             />
 
             <button
+              id="donate-nowww"
               class="btn bg-[#B4F461] text-gray-900 font-semibold normal-case mt-4 w-full"
             >
               Donate Now
@@ -150,7 +154,7 @@
               class="flex items-center gap-2 bg-gray-300 rounded-lg px-4 py-1 w-fit mb-4"
             >
               <img src="assets/coin.png" alt="Coin" class="h-6" />
-              <h4>2400</h4>
+              <h4 id="donate-quota">2400</h4>
               <p>BDT</p>
             </div>
             <h1 class="text-lg font-bold mb-2">
@@ -169,11 +173,13 @@
             </p>
             <input
               type="text"
+              id="donation-tk"
               class="input border border-gray-300 rounded-md p-2 w-full mt-4"
               placeholder="Write Donation Ammount"
             />
 
             <button
+              id="donate-noww"
               class="btn bg-[#B4F461] text-gray-900 font-semibold normal-case mt-4 w-full"
             >
               Donate Now
@@ -181,9 +187,15 @@
           </div>
         </div>
       </div>
+      <!-- history section -->
+      <section
+        id="transection-history"
+        class="container mx-auto px-6 py-8"
+      ></section>
     </main>
     <script src="js/utilities.js"></script>
     <script src="js/button.js"></script>
     <script src="js/change.js"></script>
+    <script src="js/ammount.js"></script>
   </body>
 </html>

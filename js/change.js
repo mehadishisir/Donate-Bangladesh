@@ -11,3 +11,9 @@ document.getElementById("blog-btn").addEventListener("click", function () {
 document.getElementById("home-btn").addEventListener("click", function () {
   window.location.href = "index.html";
 });
+document.getElementById("donation-btn").addEventListener("click", function () {
+  showSectionByid("donation-section");
+});
+document.getElementById("history-btn").addEventListener("click", function () {
+  showSectionByid("transection-history");
+});
