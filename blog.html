@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Donate Bangladesh</title>
+    <!-- DaisyUI & Tailwind CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awsome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZmCULaM1YcYyPsE4cJd+O+h7aV1jYh3hIi4Tk6dC2lA+6YgD9e1z9+u7P4U5pX5dkg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <script>
+    document.getElementById("home-btn").addEventListener("click", function () {
+      window.location.href = "index.html";
+    });
+  </script>
+  <body>
+    <header>
+      <nav class="flex justify-between items-center bg-yellow-50 px-8 py-2">
+        <div>
+          <!-- desktop blog btn -->
+          <a href="index.html" class="btn bg-[#B4F461] text-gray-900 font-semibold normal-case">
+  Home
+</a>
+            
+          </button>
+        </div>
+        <div class="flex flex-col items-center">
+          <img src="assets/logo.png" alt="Logo" class="h-8 mb-1" />
+          <h1 class="text-gray-900 font-semibold text-lg">Donate Bangladesh</h1>
+        </div>
+        <div class="flex items-center gap-2">
+          <img src="assets/coin.png" alt="Coin" class="h-6" />
+          <h4>5500</h4>
+          <p>BDT</p>
+        </div>
+      </nav>
+    </header>
+    <!-- main content -->
+    <main class="container mx-auto px-6 py-8">
+      <h2 class="text-2xl font-extrabold my-6">
+        Important FAQ
+        <svg
+          class="inline-block ml-2 size-6"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+          />
+        </svg>
+      </h2>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" checked="checked" />
+        <div class="collapse-title font-semibold">
+          What is the Document Object Model (DOM)?
+        </div>
+        <div class="collapse-content text-sm">
+          The Document Object Model (DOM) is a programming interface for web
+          documents. It represents the page so that programs can change the
+          document structure, style, and content. The DOM represents the
+          document as nodes and objects; that way, programming languages can
+          interact with the page.
+        </div>
+      </div>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          how do you select an elemnt in the DOM?
+        </div>
+        <div class="collapse-content text-sm">
+          You can select an element in the DOM using various methods provided by
+          the Document interface. Some common methods include:
+          <ul class="list-disc list-inside">
+            <li>
+              <strong>getElementById:</strong> Selects a single element by its
+              unique ID.
+            </li>
+            <li>
+              <strong>getElementsByClassName:</strong> Selects all elements with
+              a specific class name.
+            </li>
+            <li>
+              <strong>getElementsByTagName:</strong> Selects all elements with a
+              specific tag name.
+            </li>
+            <li>
+              <strong>querySelector:</strong> Selects the first element that
+              matches a specified CSS selector.
+            </li>
+            <li>
+              <strong>querySelectorAll:</strong> Selects all elements that match
+              a specified CSS selector.
+            </li>
+          </ul>
+          Example:
+          <pre><code>const element = document.getElementById('myElementId');</code></pre>
+        </div>
+      </div>
+      <div class="collapse bg-base-100 border border-base-300">
+        <input type="radio" name="my-accordion-1" />
+        <div class="collapse-title font-semibold">
+          What is the event delegation in the context of the Dom,and why is it
+          useful?
+        </div>
+        <div class="collapse-content text-sm">
+          Event delegation is a technique in which a single event listener is
+          added to a parent element to manage events for its child elements. It
+          leverages the concept of event bubbling, where an event triggered on a
+          child element propagates up to its parent elements. Instead of adding
+          individual event listeners to each child element, you can add one to
+          the parent and handle events for all its children.
+          <br />
+          This approach is useful because it reduces memory consumption and
+          improves performance, especially when dealing with a large number of
+          child elements. It also simplifies code maintenance, as you only need
+          to manage one event listener instead of many.
+        </div>
+        <div class="collapse bg-base-100 border border-base-300">
+          <input type="radio" name="my-accordion-1" />
+          <div class="collapse-title font-semibold">
+            How do you manupulate an element's attributes and styles using the
+            DOM?
+          </div>
+          <div class="collapse-content text-sm">
+            You can manipulate an element's attributes and styles using the DOM
+            by accessing the element's properties and methods. Here are some
+            common ways to do this:
+            <ul class="list-disc list-inside">
+              <li>
+                <strong>Attributes:</strong> You can use the
+                <code>setAttribute</code> method to set an attribute and the
+                <code>getAttribute</code> method to retrieve an attribute's
+                value. You can also directly access attributes as properties of
+                the element.
+                <pre
+                  ><code
+                    >// Set an attribute
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="js/utilities.js"></script>
+    <script src="js/button.js"></script>
+    <script src="js/change.js"></script>
+
+  </body>
+</html>
